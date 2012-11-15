@@ -118,30 +118,31 @@ body {
 .dropdown1 > .arrow:active {
     background-color:#f00;
 }
-.dropdown1 > a {
+.dropdown1 > .menu {
     position:absolute;
     display:none;
     padding: 0;
     margin: 0;
     border-radius: 0 5px 5px 5px;
     box-shadow: 0 0 3px rgba(0,0,0,0.8);
+    outline:none;
 }
 .dropdown1 > .arrow:focus
-           ~ a,
-.dropdown1 > a:active {
+           ~ .menu,
+.dropdown1 > .menu:focus {
     display: block;
 }
-.dropdown1 > a > span {
+.dropdown1 > .menu > span {
     display:block;
     padding:2px 5px;
     cursor:default;
 }
-.dropdown1 > a > span:hover {
+.dropdown1 > .menu > span:hover {
     background-color:rgba(0,0,0,0.3);
 }
-.dropdown1 > a > span:first-child {
+.dropdown1 > .menu > span:first-child {
     border-radius: 0 5px 0 0;
 }
-.dropdown1 > a > span:last-child {
+.dropdown1 > .menu > span:last-child {
     border-radius: 0 0 5px 5px;
 }

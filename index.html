@@ -33,9 +33,9 @@
     </div>
     <div class="dropdown1">
         <div class="button">text</div>
-        <input class='arrow' type="text" />
-        <a>
-            <span onclick='alert(1)'>Buy on iTunes</span>
+        <a class='arrow' tabindex='1' />
+        <a class='menu' tabindex='1' onmouseup='this.blur()'>
+            <span onclick='console.log(this)'>Buy on iTunes</span>
             <span>Buy on Amazon</span>
             <span>Buy on CD Baby</span>
             <span>Listen via Spotify</span>
